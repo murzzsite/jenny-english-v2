@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JennyEnglishSchool: первый урок английского бесплатно</title>
+<meta name="description" content="Онлайн-школа английского для детей от 4 лет и взрослых. Преподаватель или носитель языка на выбор, абонемент на месяц, первый пробный урок бесплатно.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Golos+Text:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="wrap bar__in">
+    <a href="#top" class="mark">JennyEnglishSchool</a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#month" data-roll>Как проходит месяц</a>
+      <a href="#price" data-roll>Цена</a>
+      <a href="#who" data-roll>Кому подходит</a>
+      <a href="#faq" data-roll>Вопросы</a>
+    </nav>
+    <a href="#lead" class="btn btn--sm" data-magnetic><span>Бесплатный <span class="btn__long">пробный </span>урок</span></a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <h1 data-wave data-wave-min="700" data-wave-max="800">Английский: первый урок бесплатно</h1>
+        <p class="lede">Онлайн-школа для детей от 4 лет и взрослых. Педагога выбираете сами: русскоговорящий преподаватель или носитель языка.</p>
+        <div class="hero__act">
+          <a href="#lead" class="btn btn--lg" data-magnetic>Записаться на бесплатный пробный урок</a>
+        </div>
+        <p class="hero__fact">Дальше абонемент на месяц: 8 занятий, от 1 500 ₽ за урок.</p>
+      </div>
+
+      <div class="hero__pic">
+        <img src="img/jenny-hero.jpg" width="900" height="1125" alt="Евгения Колесник, основательница JennyEnglishSchool" fetchpriority="high">
+        <div class="chat" id="chat" aria-live="polite">
+          <div class="chat__row chat__row--them">
+            <img class="chat__av" src="img/jenny-avatar.jpg" width="40" height="40" alt="">
+            <p class="bub bub--them">Hello! How are you today?<small>Привет! Как у вас дела сегодня?</small></p>
+          </div>
+          <div class="chat__opts" id="chatOpts">
+            <button type="button" class="opt" data-say="I'm fine, thank you!" data-tr="У меня всё хорошо, спасибо!">I'm fine, thank you!</button>
+            <button type="button" class="opt" data-say="A bit tired, but happy." data-tr="Немного устал(а), но рад(а).">A bit tired, but happy.</button>
+          </div>
+          <div class="chat__tail" id="chatTail" hidden></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="belt" aria-hidden="true">
+    <div class="belt__track" id="belt">
+      <span>Привет</span><span>Hello</span><span>Как дела?</span><span>How are you?</span><span>Спасибо</span><span>Thank you</span><span>Давайте начнём</span><span>Let's begin</span><span>До встречи</span><span>See you</span>
+    </div>
+  </section>
+
+  <section class="idea">
+    <div class="wrap idea__grid">
+      <p class="idea__text" id="idea">Мы не учим правила ради правил. Вы начинаете говорить на первом уроке, а педагога выбираете сами.</p>
+      <figure class="idea__who">
+        <img src="img/jenny-face.jpg" width="640" height="640" alt="Евгения Колесник" loading="lazy">
+        <figcaption>Школу ведёт Евгения Колесник. <a href="https://t.me/evgeniakolesnik" target="_blank" rel="noopener">Напишите ей в Telegram</a>, подскажет формат.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="month" id="month">
+    <div class="month__pin">
+      <div class="wrap month__grid">
+        <div class="month__side">
+          <h2 data-split>Один месяц, 8 занятий</h2>
+          <p class="month__sub">Два занятия в неделю: по понедельникам и четвергам.</p>
+          <p class="month__now" id="monthNow" aria-live="polite">Занятие <b id="monthN">1</b> из 8</p>
+          <p class="month__cap" id="monthCap">Знакомство и оценка уровня: педагог узнаёт, зачем вам английский.</p>
+        </div>
+        <div class="cal" id="cal" role="img" aria-label="Календарь месяца: восемь занятий, по два в неделю, понедельник и четверг">
+          <div class="cal__head"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div>
+          <div class="cal__grid" id="calGrid"><div class="cell is-lesson"><span>1</span><b>урок 1</b></div><div class="cell"><span>2</span></div><div class="cell"><span>3</span></div><div class="cell is-lesson"><span>4</span><b>урок 2</b></div><div class="cell"><span>5</span></div><div class="cell"><span>6</span></div><div class="cell"><span>7</span></div><div class="cell is-lesson"><span>8</span><b>урок 3</b></div><div class="cell"><span>9</span></div><div class="cell"><span>10</span></div><div class="cell is-lesson"><span>11</span><b>урок 4</b></div><div class="cell"><span>12</span></div><div class="cell"><span>13</span></div><div class="cell"><span>14</span></div><div class="cell is-lesson"><span>15</span><b>урок 5</b></div><div class="cell"><span>16</span></div><div class="cell"><span>17</span></div><div class="cell is-lesson"><span>18</span><b>урок 6</b></div><div class="cell"><span>19</span></div><div class="cell"><span>20</span></div><div class="cell"><span>21</span></div><div class="cell is-lesson"><span>22</span><b>урок 7</b></div><div class="cell"><span>23</span></div><div class="cell"><span>24</span></div><div class="cell is-lesson"><span>25</span><b>урок 8</b></div><div class="cell"><span>26</span></div><div class="cell"><span>27</span></div><div class="cell"><span>28</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="price" id="price">
+    <div class="wrap price__grid">
+      <div class="price__main">
+        <h2 data-split>Сколько стоит месяц</h2>
+        <div class="seg" id="who2" role="tablist" aria-label="С кем заниматься">
+          <button type="button" class="is-active" role="tab" aria-selected="true" data-kind="t">Преподаватель</button>
+          <button type="button" role="tab" aria-selected="false" data-kind="n">Носитель языка</button>
+        </div>
+        <p class="price__num"><b id="priceNum">12 000</b> ₽</p>
+        <p class="price__per" id="pricePer">8 занятий по 1 500 ₽</p>
+        <div class="dots" id="dots" aria-hidden="true"></div>
+      </div>
+      <div class="price__side">
+        <p id="priceTxt" class="price__txt">Русскоговорящий педагог: удобно на старте, объясняет грамматику понятным языком.</p>
+        <p class="price__note">Первый урок бесплатный. Абонемент оформляете после него, оплата помесячно, без больших пакетов вперёд.</p>
+        <a href="#lead" class="btn btn--ink btn--lg" data-magnetic>Начать с бесплатного урока</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="who" id="who">
+    <div class="wrap">
+      <h2 data-split>Кому подходят занятия</h2>
+    </div>
+
+    <div class="band band--away">
+      <div class="wrap band__grid">
+        <div class="band__text">
+          <h3>Взрослым, особенно тем, кто уже заграницей</h3>
+          <p>Нужен английский на работе, в документах и в быту, а говорить неловко? Практика с живым собеседником работает лучше приложения. Время урока подберём под ваш часовой пояс.</p>
+        </div>
+        <div class="clocks" id="clocks">
+          <p><time data-tz="Asia/Tbilisi">--:--</time><span>Тбилиси</span></p>
+          <p><time data-tz="Asia/Dubai">--:--</time><span>Дубай</span></p>
+          <p><time data-tz="Europe/Belgrade">--:--</time><span>Белград</span></p>
+          <p><time data-tz="Asia/Yerevan">--:--</time><span>Ереван</span></p>
+          <p><time data-tz="Europe/Istanbul">--:--</time><span>Анталья</span></p>
+          <p><time data-tz="Europe/Berlin">--:--</time><span>Берлин</span></p>
+        </div>
+      </div>
+      <div class="wrap band__map"><img src="img/a-general-map-of-the-world-or.jpg" width="1920" height="1617" alt="Старинная карта мира, 1794 год" loading="lazy" decoding="async"></div>
+    </div>
+
+    <div class="band band--kids">
+      <div class="wrap band__grid">
+        <div class="band__pic"><img src="img/children-reading-beneath-a-tree-story-friends.jpg" width="1184" height="909" alt="Дети читают вместе под деревом, иллюстрация 1927 года" loading="lazy" decoding="async"></div>
+        <div class="band__text">
+          <p class="band__big" aria-hidden="true">4+</p>
+          <h3>Детям от 4 лет</h3>
+          <p>Песни, карточки и простые диалоги вместо правил и оценок. Сначала бесплатный урок: ребёнок знакомится с педагогом, а вы смотрите, подходит ли формат.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="band band--exam">
+      <div class="wrap band__wide"><img src="img/education-school-classroom-blackboard-teacher-fortepan-3612.jpg" width="1920" height="1243" alt="Учитель у школьной доски, фотография 1923 года" loading="lazy" decoding="async"></div>
+      <div class="wrap band__grid">
+        <p class="band__big" aria-hidden="true">ЕГЭ</p>
+        <div class="band__text">
+          <h3>Школьникам к ЕГЭ</h3>
+          <p>Разбираем формат экзамена, отрабатываем задания и устную часть. На бесплатном уроке педагог оценит пробелы и честно скажет, сколько времени нужно на подготовку.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq__grid">
+      <h2 data-split>Частые вопросы</h2>
+      <div class="faq__list">
+        <details><summary>Дорого ли это?</summary><p>Абонемент 12 000 ₽ за 8 занятий: это 1 500 ₽ за урок при двух занятиях в неделю. Платите помесячно, а первый урок бесплатный, так что сначала убеждаетесь в формате.</p></details>
+        <details><summary>У нас совсем нет времени</summary><p>Занятия онлайн, ехать никуда не нужно. Расписание подстраиваем под вас: утром, вечером или в выходные.</p></details>
+        <details><summary>Можно начать позже?</summary><p>Можно, пробный урок ни к чему не обязывает. Но если хотите сравнить школы, пройти его стоит сейчас: решение будете принимать уже с пониманием формата.</p></details>
+        <details><summary>Чем преподаватель отличается от носителя языка?</summary><p>Преподаватель русскоговорящий: удобно на старте и для объяснения грамматики. Носитель даёт живое произношение и разговорную речь, когда база уже есть.</p></details>
+        <details><summary>С какого возраста можно заниматься?</summary><p>С 4 лет, для самых маленьких занятия игровые. Верхней границы возраста нет.</p></details>
+        <details><summary>Как проходят занятия?</summary><p>Онлайн, по видеосвязи. Нужен компьютер или телефон с интернетом, привязки к городу нет.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="lead" id="lead">
+    <div class="wrap lead__grid">
+      <div class="lead__text">
+        <h2 data-split>Начните с бесплатного урока</h2>
+        <p>Оставьте имя и контакт, мы свяжемся и подберём педагога и время. Или напишите сразу в Telegram: <a href="https://t.me/evgeniakolesnik" target="_blank" rel="noopener">@evgeniakolesnik</a>.</p>
+      </div>
+      <form class="form" id="leadForm">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+        <label>Имя
+          <input type="text" name="name" placeholder="Как к вам обращаться" required autocomplete="given-name">
+        </label>
+        <label>Телефон или Telegram
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+        </label>
+        <label>Кому нужны занятия
+          <select name="comment">
+            <option value="Ребёнку от 4 лет">Ребёнку от 4 лет</option>
+            <option value="Школьнику, подготовка к ЕГЭ">Школьнику, подготовка к ЕГЭ</option>
+            <option value="Взрослому для себя">Взрослому для себя</option>
+            <option value="Живу заграницей, нужна практика">Живу заграницей, нужна практика</option>
+            <option value="С носителем языка">С носителем языка</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn--lg">Записаться на бесплатный пробный урок</button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="foot__word" aria-hidden="true">JennyEnglishSchool</p>
+    <div class="foot__row">
+      <p>Онлайн-школа английского языка для детей от 4 лет и взрослых.</p>
+      <p><a href="https://t.me/evgeniakolesnik" target="_blank" rel="noopener">Telegram</a> <a href="https://vk.ru/jennyenglish" target="_blank" rel="noopener">ВКонтакте</a> <a href="privacy.html">Конфиденциальность</a></p>
+      <p>© <span id="year"></span> JennyEnglishSchool</p>
+    </div>
+    <p class="credits">Картинки: <a href="https://commons.wikimedia.org/wiki/File:Children_reading_beneath_a_tree_-_Story-Friends_(1927)_-_Mabel_Betsy_Hill.jpg">«Children reading beneath a tree», Mabel Betsy Hill, 1927</a>, <a href="https://creativecommons.org/publicdomain/mark/1.0/">общественное достояние</a>; <a href="https://commons.wikimedia.org/wiki/File:Education,_school,_classroom,_blackboard,_teacher_Fortepan_3612.jpg">Fortepan, ID 3612</a>, общественное достояние; <a href="https://commons.wikimedia.org/wiki/File:1794_Samuel_Dunn_Wall_Map_of_the_World_in_Hemispheres_-_Geographicus_-_World2-dunn-1794.jpg">карта мира Thomas Kitchin, 1794</a>, общественное достояние. Источник: Wikimedia Commons.</p>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="motion.js" defer></script>
+<script src="site.js" defer></script>
+</body>
+</html>
