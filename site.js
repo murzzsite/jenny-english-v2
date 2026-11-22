@@ -62,6 +62,21 @@
     setKind(b.dataset.kind);
   }));
 
+  /* кейсы: переключатель */
+  const caseImgs = ['img/case-alisa.jpg', 'img/case-kseniya.jpg', 'img/case-yaroslav.jpg'];
+  const caseAlt = ['Кейс: Алиса, 7 лет, до и после', 'Кейс: Ксения, 23 года, до и после', 'Кейс: Ярослав, 9 лет, до и после'];
+  const caseTabs = $$('#caseTabs button');
+  const showCase = i => {
+    caseTabs.forEach((b, k) => { b.classList.toggle('is-active', k === i); b.setAttribute('aria-selected', k === i); });
+    $$('.cs').forEach((c, k) => { c.hidden = k !== i; });
+    const img = $('#caseImg'); img.src = caseImgs[i]; img.alt = caseAlt[i]; $('#casePic').href = caseImgs[i];
+    if (!reduce && window.gsap) {
+      gsap.fromTo('.cs:not([hidden]) > *', { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: .5, ease: 'power3.out', stagger: .05, clearProps: 'all' });
+      gsap.fromTo(img, { opacity: 0, scale: .97 }, { opacity: 1, scale: 1, duration: .5, ease: 'power3.out', clearProps: 'all' });
+    }
+  };
+  caseTabs.forEach((b, k) => b.addEventListener('click', () => showCase(k)));
+
   /* форма */
   $$('input[type="tel"]').forEach(input => input.addEventListener('input', e => {
     let v = e.target.value.replace(/\D/g, '');
