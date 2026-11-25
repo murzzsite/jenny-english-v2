@@ -96,6 +96,8 @@
     const btn = $('button[type="submit"]', form), orig = btn.textContent;
     const payload = {}; new FormData(form).forEach((v, k) => { payload[k] = v; });
     if (payload._gotcha) return;
+    if (!payload.consent) { alert('Поставьте отметку о согласии на обработку персональных данных'); return; }
+    delete payload.consent;
     if (!payload.name || !payload.phone) { alert('Заполните имя и контактные данные'); return; }
     btn.disabled = true; btn.textContent = 'Отправляем...';
     try {
@@ -105,6 +107,14 @@
     } catch (err) { console.error(err); btn.textContent = 'Ошибка, попробуйте ещё раз'; }
     finally { setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3500); }
   });
+
+  /* cookie */
+  const ck = $('#cookie');
+  if (ck) {
+    let seen = false; try { seen = localStorage.getItem('cookie-ok') === '1'; } catch (e) {}
+    if (!seen) ck.hidden = false;
+    $('#cookie-ok').addEventListener('click', () => { ck.hidden = true; try { localStorage.setItem('cookie-ok', '1'); } catch (e) {} });
+  }
 
   /* календарь месяца: подписи этапов */
   const stages = [

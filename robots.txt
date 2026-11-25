@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /project/
+
+Sitemap: https://jennyenglishschool.ru/sitemap.xml

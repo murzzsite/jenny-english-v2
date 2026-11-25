@@ -189,6 +189,15 @@ h2 { font-size: var(--t-52); }
 .form .btn { width: 100%; }
 .form__note { font-size: 16px; }
 
+.form .consent { display: flex; gap: 12px; align-items: flex-start; font-weight: 400; font-size: 15px; line-height: 1.45; }
+.form .consent input { width: 22px; height: 22px; flex: none; margin: 1px 0 0; accent-color: var(--accent); }
+.form .consent a { font-weight: 600; }
+.cookie { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 90; max-width: 640px; margin: 0 auto; display: flex; gap: 16px; align-items: center; background: #fff; border: 1.5px solid #e0c9a8; border-radius: 16px; padding: 14px 16px; box-shadow: 0 10px 30px -12px rgba(43,26,18,.35); font-size: 15px; line-height: 1.4; }
+.cookie[hidden] { display: none; }
+.cookie p { flex: 1; min-width: 0; }
+.cookie a { font-weight: 600; text-decoration: underline; }
+@media (max-width: 560px) { .cookie { flex-direction: column; align-items: stretch; } }
+
 /* foot */
 .foot { padding: clamp(72px, 9vw, 130px) 0 36px; overflow: hidden; }
 .credits { font-size: 16px; margin-top: 28px; max-width: 70em; }
