@@ -104,6 +104,7 @@
       const r = await fetch(LEAD_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       btn.textContent = 'Заявка отправлена, спасибо!'; form.reset();
+      try { if (window.ym) window.ym(114696198, 'reachGoal', 'lead'); } catch (_) {}
     } catch (err) { console.error(err); btn.textContent = 'Ошибка, попробуйте ещё раз'; }
     finally { setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3500); }
   });
