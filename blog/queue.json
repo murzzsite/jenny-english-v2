@@ -1,0 +1,20 @@
+{
+  "site": "https://jennyenglishschool.ru",
+  "updated": "2026-11-26",
+  "awaiting": [],
+  "scheduled": [
+    {
+      "slug": "skolko-stoit-angliiskii-onlain",
+      "title": "Сколько стоит английский онлайн: как считать цену занятий и не переплатить",
+      "date": "2026-12-01"
+    }
+  ],
+  "published": [
+    {
+      "slug": "s-kakogo-vozrasta-angliiskii-rebenku",
+      "title": "С какого возраста начинать английский с ребёнком: игровой формат с 4 лет",
+      "url": "https://jennyenglishschool.ru/blog/s-kakogo-vozrasta-angliiskii-rebenku/",
+      "date": "2026-11-24"
+    }
+  ]
+}

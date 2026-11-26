@@ -1,0 +1,41 @@
+{
+  "siteName": "JennyEnglishSchool",
+  "siteUrl": "https://jennyenglishschool.ru",
+  "lang": "ru",
+  "repo": "murzzsite/jenny-english-v2",
+  "ref": "FS4WULPEF4",
+  "workerUrl": "https://lead-relay.leestygpt.workers.dev",
+  "blogTitle": "Блог",
+  "blogDescription": "Полезные статьи от JennyEnglishSchool",
+  "homeTitle": "Полезные статьи",
+  "author": {
+    "name": "JennyEnglishSchool",
+    "jobTitle": "",
+    "type": "Organization"
+  },
+  "ctaTitle": "Остались вопросы?",
+  "ctaText": "Оставьте заявку — разберём вашу ситуацию и подскажем следующий шаг.",
+  "ctaButton": "Оставить заявку",
+  "ctaUrl": "/#lead",
+  "disclaimer": "",
+  "telegramNotify": true,
+  "cadenceDays": 7,
+  "homeLatest": 3,
+  "staticPages": [
+    "/",
+    "/privacy.html",
+    "/presentation.html"
+  ],
+  "indexNowKey": "3be663e73d9cb3ae52d019f72ac6ed7c",
+  "previewSecret": "31bcf0abc9ee24d9",
+  "theme": {
+    "accent": "var(--accent)",
+    "bg": "var(--ground)",
+    "surface": "#ffffff",
+    "ink": "var(--ink)",
+    "text": "var(--ink-2)",
+    "soft": "#7a6155",
+    "line": "#f0dcc0",
+    "accent-soft": "var(--blush)"
+  }
+}
